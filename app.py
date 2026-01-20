@@ -434,7 +434,7 @@ class FinesApp:
                     (fio, plate, sum_value, reason, place),
                 )
             messagebox.showinfo("Готово", "Штраф создан.")
-            self.load_inspector_fines(require_filter=True)
+            self.load_inspector_fines(require_filter=False)
         except Exception as e:
             messagebox.showerror("Ошибка", str(e))
 
